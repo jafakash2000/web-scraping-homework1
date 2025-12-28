@@ -2,3 +2,4 @@ streamlit==1.28.1
 pandas==1.5.3
 transformers==4.33.0
 plotly==5.17.0
+torch==2.0.0
