@@ -27,8 +27,7 @@ page = st.sidebar.radio("Select Section:", ["Products", "Reviews", "Testimonials
 @st.cache_resource
 def load_sentiment_model():
     return pipeline("sentiment-analysis", 
-                   model="distilbert-base-uncased-finetuned-sst-2-english",
-                   device=-1)
+                   model="distilbert-base-uncased-finetuned-sst-2-english")
 
 sentiment_pipeline = load_sentiment_model()
 
